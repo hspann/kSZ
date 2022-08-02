@@ -439,7 +439,7 @@ print(len(ltki_interp))
 print(len(ltki_interp[0]))
 
 Z_cutoff = 50
-#251 is the redshift cutoff where python interprets the values as infinity. Figured by trial and error
+#Change Z_cutoff here to change the redshift upper limit. 251 is where python begins to interprets the lkti values as infinity. Cutoff at 50 produces decipherable plots. Figured by trial and error
 a = np.resize(ltki_interp,(Z_cutoff,1450))
 print(len(a))
 print(len(a[0]))
