@@ -516,7 +516,7 @@ dK_bar_integrand = []
 for i in range(len(dC_kSZ_dz)):
     dK_bar_integrand_intermediate = []
     for k in range (2,len(dC_kSZ_dz[0])):
-    #note, if involving the ell = 0 index, we get all nan output in dK_bar_dz, when involving z = 1 index, we get all z = inf output in d_K_bar_dz 
+    #note, if involving the ell = 0 index, we get all nan output in dK_bar_dz, when involving ell = 1 index, we get all z = inf output in d_K_bar_dz 
         dK_bar_integrand_intermediate.append(dC_kSZ_dz[i][k]*(Ws[k]**2)*new_l[k]/(2*np.pi))
     dK_bar_integrand.append(dK_bar_integrand_intermediate)
         
